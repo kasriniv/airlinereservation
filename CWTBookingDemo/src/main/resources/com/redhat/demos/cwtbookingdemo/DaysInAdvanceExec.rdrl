@@ -1,0 +1,14 @@
+package com.redhat.demos.cwtbookingdemo;
+
+import java.lang.Number;
+
+rule "DaysInAdvanceExec"
+	dialect "mvel"
+	ruleflow-group "daterules"
+	enabled false
+	when
+		$tseg1 : TravelSegment( originationDate after [15] $tseg1.bookingDate )
+		$tprof1 : TravelerProfile( executiveLevel == "Director" )
+	then
+		$tseg1.setSegmentComment( "Allowed" );
+end

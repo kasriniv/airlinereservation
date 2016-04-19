@@ -1,0 +1,12 @@
+package com.redhat.demos.cwtbookingdemo;
+
+import java.lang.Number;
+
+rule "DaysInAdvancePolicy"
+	dialect "mvel"
+	ruleflow-group "daterules"
+	when
+		$tseg : TravelSegment( originationDate before [1] ( bookingDate ) )
+	then
+		$tseg.setSegmentComment( "NotAllowed" );
+end

@@ -1,0 +1,14 @@
+package com.redhat.demos.cwtbookingdemo;
+
+
+
+import java.lang.Number;
+
+rule "CheckPersonalPayment"
+	ruleflow-group "paymenttyperules"
+	dialect "mvel"
+	when
+		tseg : TravelSegment( tripReason == "Personal" , segmentPaymentType == "Corporate" )
+	then
+		tseg.setSegmentComment( "NotAllowed" );
+end
