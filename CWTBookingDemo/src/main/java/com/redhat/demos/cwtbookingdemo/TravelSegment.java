@@ -44,8 +44,11 @@ public class TravelSegment implements java.io.Serializable
    @org.kie.api.definition.type.Label("Date Booked")
    private java.util.Date bookingDate;
 
-   @org.kie.api.definition.type.Label(value = "Preferred Price Limit")
-   private int pricelimit;
+   @org.kie.api.definition.type.Label("Flight Number")
+   private java.lang.String flgihtID;
+
+   @org.kie.api.definition.type.Label("Price Limite")
+   private String pricelimit;
 
    public TravelSegment()
    {
@@ -168,8 +171,6 @@ public class TravelSegment implements java.io.Serializable
       return this.tripReason;
    }
 
-   
-
    public void setTripReason(java.lang.String tripReason)
    {
       this.tripReason = tripReason;
@@ -191,12 +192,22 @@ public class TravelSegment implements java.io.Serializable
       this.bookingDate = bookingDate;
    }
 
-   public int getPricelimit()
+   public java.lang.String getFlgihtID()
+   {
+      return this.flgihtID;
+   }
+
+   public void setFlgihtID(java.lang.String flgihtID)
+   {
+      this.flgihtID = flgihtID;
+   }
+
+   public java.lang.String getPricelimit()
    {
       return this.pricelimit;
    }
 
-   public void setPricelimit(int pricelimit)
+   public void setPricelimit(java.lang.String pricelimit)
    {
       this.pricelimit = pricelimit;
    }
@@ -209,7 +220,8 @@ public class TravelSegment implements java.io.Serializable
          java.lang.String segmentFareClass, java.lang.String segmentPaymentType,
          java.util.List<java.lang.String> segmentRemarks,
          java.lang.String segmentComment, java.lang.String tripReason,
-         java.util.Date bookingDate, int pricelimit)
+         java.util.Date bookingDate, java.lang.String flgihtID,
+         java.lang.String pricelimit)
    {
       this.segmentID = segmentID;
       this.originationDate = originationDate;
@@ -224,6 +236,7 @@ public class TravelSegment implements java.io.Serializable
       this.segmentComment = segmentComment;
       this.tripReason = tripReason;
       this.bookingDate = bookingDate;
+      this.flgihtID = flgihtID;
       this.pricelimit = pricelimit;
    }
 
