@@ -1,0 +1,76 @@
+<scenario>
+  <name>PaymentRuleTableTest.scenario</name>
+  <maxRuleFirings>100000</maxRuleFirings>
+  <globals/>
+  <fixtures>
+    <fact-data>
+      <type>TravelSegment</type>
+      <fieldData>
+        <field-data>
+          <name>channel</name>
+          <value>Online</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>processmaster</name>
+          <value>AQUA</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>fee</name>
+          <value>Individual</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>card</name>
+          <value>Same as Product</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>airsegment</name>
+          <value>Yes</value>
+          <nature>4</nature>
+        </field-data>
+        <field-data>
+          <name>carsegment</name>
+          <value>No</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>ts</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+      <name>paymentchecktable</name>
+    </org.drools.workbench.models.testscenarios.shared.ActivateRuleFlowGroup>
+    <execution-trace>
+      <executionTimeResult>16</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>feesource</fieldName>
+          <expected>PNR FOP</expected>
+          <actualResult>Portrait</actualResult>
+          <successResult>false</successResult>
+          <explanation>[ts] field [feesource] was [Portrait] expected [PNR FOP].</explanation>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>ts</name>
+      <anonymous>false</anonymous>
+    </expect-fact>
+  </fixtures>
+  <lastRunResult>2016-04-27 19:43:07.523 UTC</lastRunResult>
+  <rules/>
+  <inclusive>false</inclusive>
+  <packageName>com.redhat.demos.cwtbookingdemo</packageName>
+  <imports>
+    <imports/>
+  </imports>
+  <ksessions>
+    <string>defaultKieSession</string>
+  </ksessions>
+</scenario>

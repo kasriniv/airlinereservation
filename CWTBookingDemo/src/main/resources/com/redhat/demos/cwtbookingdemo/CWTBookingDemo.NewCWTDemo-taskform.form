@@ -1,0 +1,116 @@
+
+<form id="786912041">
+<property name="name" value="CWTBookingDemo.NewCWTDemo-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="TravelSegment_airsegment" type="InputText" id="998185348">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;airsegment (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="TravelSegment/airsegment"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="TravelSegment_bookingPCC" type="InputText" id="767626917">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;bookingPCC (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="TravelSegment/bookingPCC"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="TravelSegment_card" type="InputText" id="264644978">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;card (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="TravelSegment/card"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="TravelSegment_carsegment" type="InputText" id="1892521855">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;carsegment (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="TravelSegment/carsegment"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="TravelSegment_channel" type="InputText" id="1054411608">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;channel (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="TravelSegment/channel"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="TravelSegment_clientGUID" type="InputText" id="790854470">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;clientGUID (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="TravelSegment/clientGUID"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="6" name="TravelSegment_clientSubtoIRD" type="InputText" id="725901080">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;clientSubtoIRD (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="TravelSegment/clientSubtoIRD"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="7" name="TravelSegment_country" type="InputText" id="994763889">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;country (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="TravelSegment/country"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="8" name="TravelSegment_fee" type="InputText" id="2103862738">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;fee (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="TravelSegment/fee"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="9" name="TravelSegment_numberofairsegments" type="InputText" id="1144059702">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;numberofairsegments (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="TravelSegment/numberofairsegments"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="10" name="TravelSegment_processmaster" type="InputText" id="753242544">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;enquot;,quot;processmaster (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="TravelSegment/processmaster"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="11" name="TravelSegment_totalairfare" type="InputText" id="1561145207">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;totalairfare (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="TravelSegment/totalairfare"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="12" name="TravelSegment_undergoneird" type="InputText" id="691152050">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;undergoneird (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="TravelSegment/undergoneird"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="13" name="TravelSegment_withairsegment" type="InputText" id="1635605100">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;withairsegment (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="TravelSegment/withairsegment"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#E9E371" type="dataModelerEntry" outId="TravelSegment" value="com.redhat.demos.cwtbookingdemo.TravelSegment" id="TravelSegment"/>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="paymentruleoutput" value="java.lang.String" id="paymentruleoutput"/>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="rateruleoutput" value="java.lang.String" id="rateruleoutput"/>
+<dataHolder inputId="" name="#9BCAFA" type="basicType" outId="webserviceoutput" value="java.lang.String" id="webserviceoutput"/>
+</form>

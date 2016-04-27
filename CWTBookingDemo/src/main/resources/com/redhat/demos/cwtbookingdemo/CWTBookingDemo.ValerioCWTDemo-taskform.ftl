@@ -48,17 +48,24 @@
 	function taskFormValidator() {
 		var i=0;
 		var myInputs = new Array();
-					myInputs[i] = document.getElementById("tsout");
+					myInputs[i] = document.getElementById("webservicein");
+					i++;
+					myInputs[i] = document.getElementById("webserviceout");
 					i++;
 
 
 		var j=0;
 						if(notEmpty(myInputs[j]) && !isAlphanumeric(myInputs[j])) {
-							alert("Please enter valid tsout");
+							alert("Please enter valid webservicein");
 							myInputs[j].focus();
 							return false;
 						}
-			
+					j++;
+						if(notEmpty(myInputs[j]) && !isAlphanumeric(myInputs[j])) {
+							alert("Please enter valid webserviceout");
+							myInputs[j].focus();
+							return false;
+						}
 					j++;
 
 		return true;
@@ -211,45 +218,20 @@
 </style>
 <div id="container">
 	<div id="header">
-		User Task Form: ValerioCWTDemo.DataCorrection
+		New Process Instance: /CWTBookingDemo/src/main/resources/com/redhat/demos/cwtbookingdemo.ValerioCWTDemo
 	</div>
 	<div id="content">
-	    <input type="hidden" name="taskId" value="${task.id}"/>
+	    <input type="hidden" name="processId" value="${process.id}"/>
 		<fieldset>
-            <legend>Task Info</legend>
-            	<label for="name">Owners</label>
-            	<div class="div_checkbox">
-											kavitha
-            	
-            	</div>
-            	<label for="name">Actor ID</label>
-            	<div class="div_checkbox"></div>
-            	<label for="name">Group</label>
-            	<div class="div_checkbox"></div>
-            	<label for="name">Skippable</label>
-            	<div class="div_checkbox">true</div>
-            	<label for="name">Priority</label>
-            	<div class="div_checkbox"></div>
-            	<label for="name">Comment</label>
-            	<div class="div_checkbox"></div>
-            <div class="clear"></div>
-          </fieldset>
-
-		<fieldset>
-            <legend>Task Inputs</legend>
-                            		<label for="name">ts1</label>
-                            		<div class="div_checkbox">
-                              		${ts1}
-                            		</div>
-
-            <div class="clear"></div>
-          </fieldset>
-
-          <fieldset>
-            <legend>Task Outputs</legend>
-                            		<label for="name">tsout</label>
+            <legend>Process inputs</legend>
+                            		<label for="name">webservicein</label>
                             		<div class="div_texbox">
-                              		<input name="tsout" type="text" class="textbox" id="tsout" value="${tsout}" />
+                              		<input name="webservicein" type="text" class="textbox" id="webservicein" value="" />
+                            		</div>
+              	
+                            		<label for="name">webserviceout</label>
+                            		<div class="div_texbox">
+                              		<input name="webserviceout" type="text" class="textbox" id="webserviceout" value="" />
                             		</div>
               	
 
