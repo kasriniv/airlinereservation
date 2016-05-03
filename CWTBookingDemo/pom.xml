@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.redhat.demos</groupId>
   <artifactId>CWTBookingDemo</artifactId>
-  <version>73</version>
+  <version>74</version>
   <name>CWTBookingDemo</name>
   <build>
     <plugins>
