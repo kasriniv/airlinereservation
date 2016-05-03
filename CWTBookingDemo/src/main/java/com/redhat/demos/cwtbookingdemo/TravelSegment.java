@@ -77,26 +77,29 @@ public class TravelSegment implements java.io.Serializable
    @org.kie.api.definition.type.Label("With Air Segment")
    private java.lang.String withairsegment;
 
-   @org.kie.api.definition.type.Label(value = "Channel")
+   @org.kie.api.definition.type.Label("Channel")
    private java.lang.String channel;
 
-   @org.kie.api.definition.type.Label(value = "Process Master")
+   @org.kie.api.definition.type.Label("Process Master")
    private java.lang.String processmaster;
 
-   @org.kie.api.definition.type.Label(value = "Fee")
+   @org.kie.api.definition.type.Label("Fee")
    private java.lang.String fee;
 
-   @org.kie.api.definition.type.Label(value = "Card")
+   @org.kie.api.definition.type.Label("Card")
    private java.lang.String card;
 
-   @org.kie.api.definition.type.Label(value = "Air Segment")
+   @org.kie.api.definition.type.Label("Air Segment")
    private java.lang.String airsegment;
 
-   @org.kie.api.definition.type.Label(value = "Car Segment")
+   @org.kie.api.definition.type.Label("Car Segment")
    private java.lang.String carsegment;
 
-   @org.kie.api.definition.type.Label(value = "Fee Source")
+   @org.kie.api.definition.type.Label("Fee Source")
    private java.lang.String feesource;
+
+   @org.kie.api.definition.type.Label(value = "Preticket days Input")
+   private java.lang.String daysinadvance;
 
    public TravelSegment()
    {
@@ -227,10 +230,10 @@ public class TravelSegment implements java.io.Serializable
    @Override
    public String toString()
    {
-      return "TravelSegment is" + 
-      clientSubtoIRD+".."+undergoneird+"..."+withairsegment+".."+clientGUID+"..."+country+"..."+bookingPCC+"..."+numberofairsegments+"..."+totalairfare
-      +"..."+preticketingdays+"..."+"channel is: "+channel+"processmaster is: "+processmaster+"fee is: "+fee+"card is: "+card+"airsegment is:"+airsegment
-      +"carsegment is: "+carsegment+"feesource is: "+feesource;
+      return "TravelSegment is" +
+            clientSubtoIRD + ".." + undergoneird + "..." + withairsegment + ".." + clientGUID + "..." + country + "..." + bookingPCC + "..." + numberofairsegments + "..." + totalairfare
+            + "..." + preticketingdays + "..." + "channel is: " + channel + "processmaster is: " + processmaster + "fee is: " + fee + "card is: " + card + "airsegment is:" + airsegment
+            + "carsegment is: " + carsegment + "feesource is: " + feesource;
    }
 
    public java.util.Date getBookingDate()
@@ -423,6 +426,16 @@ public class TravelSegment implements java.io.Serializable
       this.feesource = feesource;
    }
 
+   public java.lang.String getDaysinadvance()
+   {
+      return this.daysinadvance;
+   }
+
+   public void setDaysinadvance(java.lang.String daysinadvance)
+   {
+      this.daysinadvance = daysinadvance;
+   }
+
    public TravelSegment(java.lang.String segmentID,
          java.util.Date originationDate, java.util.Date terminationDate,
          java.lang.String segmentTypeCode, java.lang.String segmentVendorCode,
@@ -440,7 +453,7 @@ public class TravelSegment implements java.io.Serializable
          java.lang.String channel, java.lang.String processmaster,
          java.lang.String fee, java.lang.String card,
          java.lang.String airsegment, java.lang.String carsegment,
-         java.lang.String feesource)
+         java.lang.String feesource, java.lang.String daysinadvance)
    {
       this.segmentID = segmentID;
       this.originationDate = originationDate;
@@ -473,6 +486,7 @@ public class TravelSegment implements java.io.Serializable
       this.airsegment = airsegment;
       this.carsegment = carsegment;
       this.feesource = feesource;
+      this.daysinadvance = daysinadvance;
    }
 
 }

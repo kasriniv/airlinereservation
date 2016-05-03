@@ -1,0 +1,134 @@
+
+<form id="551444938">
+<property name="name" value="Correction-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="TravelSegment_airsegment" type="InputText" id="1403619591">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;airsegment (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="newtsegin/airsegment"/>
+<property name="outputBinding" value="newtsegout/airsegment"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="TravelSegment_bookingPCC" type="InputText" id="174895017">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;bookingPCC (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="newtsegin/bookingPCC"/>
+<property name="outputBinding" value="newtsegout/bookingPCC"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="TravelSegment_card" type="InputText" id="1819573325">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;card (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="newtsegin/card"/>
+<property name="outputBinding" value="newtsegout/card"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="TravelSegment_carsegment" type="InputText" id="1862298791">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;carsegment (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="newtsegin/carsegment"/>
+<property name="outputBinding" value="newtsegout/carsegment"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="TravelSegment_channel" type="InputText" id="1590164035">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;channel (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="newtsegin/channel"/>
+<property name="outputBinding" value="newtsegout/channel"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="TravelSegment_clientGUID" type="InputText" id="1649002713">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;clientGUID (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="newtsegin/clientGUID"/>
+<property name="outputBinding" value="newtsegout/clientGUID"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="6" name="TravelSegment_clientSubtoIRD" type="InputText" id="664460080">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;clientSubtoIRD (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="newtsegin/clientSubtoIRD"/>
+<property name="outputBinding" value="newtsegout/clientSubtoIRD"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="7" name="TravelSegment_country" type="InputText" id="667894913">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;country (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="newtsegin/country"/>
+<property name="outputBinding" value="newtsegout/country"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="8" name="TravelSegment_daysinadvance" type="InputText" id="175976424">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;daysinadvance (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="newtsegin/daysinadvance"/>
+<property name="outputBinding" value="newtsegout/daysinadvance"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="9" name="TravelSegment_fee" type="InputText" id="1867883510">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;fee (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="newtsegin/fee"/>
+<property name="outputBinding" value="newtsegout/fee"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="10" name="TravelSegment_feesource" type="InputText" id="1393274191">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;feesource (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="newtsegin/feesource"/>
+<property name="outputBinding" value="newtsegout/feesource"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="11" name="TravelSegment_processmaster" type="InputText" id="1896502180">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;processmaster (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="newtsegin/processmaster"/>
+<property name="outputBinding" value="newtsegout/processmaster"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="12" name="TravelSegment_totalairfare" type="InputText" id="460434738">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;totalairfare (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="newtsegin/totalairfare"/>
+<property name="outputBinding" value="newtsegout/totalairfare"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="13" name="TravelSegment_undergoneird" type="InputText" id="1056631565">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;undergoneird (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="newtsegin/undergoneird"/>
+<property name="outputBinding" value="newtsegout/undergoneird"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="14" name="TravelSegment_withairsegment" type="InputText" id="1959599208">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;withairsegment (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="newtsegin/withairsegment"/>
+<property name="outputBinding" value="newtsegout/withairsegment"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="newtsegin" name="#E9E371" type="dataModelerEntry" outId="newtsegout" value="com.redhat.demos.cwtbookingdemo.TravelSegment" id="TravelSegment"/>
+</form>

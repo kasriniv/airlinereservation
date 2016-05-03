@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_J4P60A2jEea4BY8hNaex2w" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" exporter="jBPM Designer" exporterVersion="6.2.0" expressionLanguage="http://www.mvel.org/2.0" targetNamespace="http://www.omg.org/bpmn20" typeLanguage="http://www.java.com/javaTypes">
+  <bpmn2:itemDefinition id="_TravelSegmentItem" structureRef="com.redhat.demos.cwtbookingdemo.TravelSegment"/>
+  <bpmn2:itemDefinition id="__AE4FF48F-52EF-43B0-AE48-5A292BAFF17B_tsinInputXItem" structureRef="com.redhat.demos.cwtbookingdemo.TravelSegment"/>
+  <bpmn2:process id="CWTBookingDemo.FormTestProcess" drools:packageName="com.redhat.demos.cwtbookingdemo" drools:version="1.0" name="FormTestProcess" isExecutable="true">
+    <bpmn2:property id="TravelSegment" itemSubjectRef="_TravelSegmentItem"/>
+    <bpmn2:startEvent id="processStartEvent" drools:selectable="true" color:background-color="#9acd32" color:border-color="#000000" color:color="#000000" name="">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[]]></drools:metaValue>
+        </drools:metaData>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:outgoing>_A15F639D-993D-4756-B6AC-4F4463BB3CF8</bpmn2:outgoing>
+    </bpmn2:startEvent>
+    <bpmn2:businessRuleTask id="_AE4FF48F-52EF-43B0-AE48-5A292BAFF17B" drools:selectable="true" drools:ruleFlowGroup="ratecheck" drools:scriptFormat="http://www.java.com/java" color:background-color="#fafad2" color:border-color="#000000" color:color="#000000" name="Call Rate Check">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[Call Rate Check]]></drools:metaValue>
+        </drools:metaData>
+        <drools:onEntry-script scriptFormat="http://www.java.com/java">
+          <drools:script><![CDATA[System.out.println("Travel segment into rule"+TravelSegment.toString());]]></drools:script>
+        </drools:onEntry-script>
+        <drools:onExit-script scriptFormat="http://www.java.com/java">
+          <drools:script><![CDATA[System.out.println("Travel segment back from rule"+TravelSegment.toString());]]></drools:script>
+        </drools:onExit-script>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_A15F639D-993D-4756-B6AC-4F4463BB3CF8</bpmn2:incoming>
+      <bpmn2:outgoing>_D966BC6F-2745-4910-A8EB-421E4C4B1FFF</bpmn2:outgoing>
+      <bpmn2:ioSpecification id="_J4P60Q2jEea4BY8hNaex2w">
+        <bpmn2:dataInput id="_AE4FF48F-52EF-43B0-AE48-5A292BAFF17B_tsinInputX" drools:dtype="com.redhat.demos.cwtbookingdemo.TravelSegment" itemSubjectRef="__AE4FF48F-52EF-43B0-AE48-5A292BAFF17B_tsinInputXItem" name="tsin"/>
+        <bpmn2:inputSet id="_J4P60g2jEea4BY8hNaex2w">
+          <bpmn2:dataInputRefs>_AE4FF48F-52EF-43B0-AE48-5A292BAFF17B_tsinInputX</bpmn2:dataInputRefs>
+        </bpmn2:inputSet>
+        <bpmn2:outputSet id="_J4P60w2jEea4BY8hNaex2w"/>
+      </bpmn2:ioSpecification>
+      <bpmn2:dataInputAssociation id="_J4P61A2jEea4BY8hNaex2w">
+        <bpmn2:sourceRef>TravelSegment</bpmn2:sourceRef>
+        <bpmn2:targetRef>_AE4FF48F-52EF-43B0-AE48-5A292BAFF17B_tsinInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+    </bpmn2:businessRuleTask>
+    <bpmn2:sequenceFlow id="_A15F639D-993D-4756-B6AC-4F4463BB3CF8" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="processStartEvent" targetRef="_AE4FF48F-52EF-43B0-AE48-5A292BAFF17B"/>
+    <bpmn2:endEvent id="_1F869B20-0894-45B3-9525-B72D484923F5" drools:selectable="true" color:background-color="#ff6347" color:border-color="#000000" color:color="#000000" name="">
+      <bpmn2:extensionElements>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[]]></drools:metaValue>
+        </drools:metaData>
+        <drools:metaData name="elementname">
+          <drools:metaValue><![CDATA[]]></drools:metaValue>
+        </drools:metaData>
+      </bpmn2:extensionElements>
+      <bpmn2:incoming>_D966BC6F-2745-4910-A8EB-421E4C4B1FFF</bpmn2:incoming>
+    </bpmn2:endEvent>
+    <bpmn2:sequenceFlow id="_D966BC6F-2745-4910-A8EB-421E4C4B1FFF" drools:selectable="true" color:background-color="#000000" color:border-color="#000000" color:color="#000000" sourceRef="_AE4FF48F-52EF-43B0-AE48-5A292BAFF17B" targetRef="_1F869B20-0894-45B3-9525-B72D484923F5"/>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_J4P61Q2jEea4BY8hNaex2w">
+    <bpmndi:BPMNPlane id="_J4P61g2jEea4BY8hNaex2w" bpmnElement="CWTBookingDemo.FormTestProcess">
+      <bpmndi:BPMNShape id="_J4P61w2jEea4BY8hNaex2w" bpmnElement="processStartEvent">
+        <dc:Bounds height="30.0" width="30.0" x="120.0" y="165.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_J4P62A2jEea4BY8hNaex2w" bpmnElement="_AE4FF48F-52EF-43B0-AE48-5A292BAFF17B">
+        <dc:Bounds height="80.0" width="100.0" x="195.0" y="135.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_J4P62Q2jEea4BY8hNaex2w" bpmnElement="_A15F639D-993D-4756-B6AC-4F4463BB3CF8">
+        <di:waypoint xsi:type="dc:Point" x="135.0" y="180.0"/>
+        <di:waypoint xsi:type="dc:Point" x="245.0" y="175.0"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="_J4P62g2jEea4BY8hNaex2w" bpmnElement="_1F869B20-0894-45B3-9525-B72D484923F5">
+        <dc:Bounds height="28.0" width="28.0" x="340.0" y="166.0"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="_J4P62w2jEea4BY8hNaex2w" bpmnElement="_D966BC6F-2745-4910-A8EB-421E4C4B1FFF">
+        <di:waypoint xsi:type="dc:Point" x="245.0" y="175.0"/>
+        <di:waypoint xsi:type="dc:Point" x="354.0" y="180.0"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmn2:relationship id="_J4P63A2jEea4BY8hNaex2w" type="BPSimData">
+    <bpmn2:extensionElements>
+      <bpsim:BPSimData>
+        <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
+          <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters" baseTimeUnit="min"/>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_1F869B20-0894-45B3-9525-B72D484923F5" id="_J4P63Q2jEea4BY8hNaex2w">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:UniformDistribution max="10.0" min="5.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="processStartEvent" id="_J4P63g2jEea4BY8hNaex2w">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:UniformDistribution max="10.0" min="5.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:ControlParameters xsi:type="bpsim:ControlParameters">
+              <bpsim:Probability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="100.0"/>
+              </bpsim:Probability>
+            </bpsim:ControlParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_AE4FF48F-52EF-43B0-AE48-5A292BAFF17B" id="_J4P63w2jEea4BY8hNaex2w">
+            <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
+              <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
+                <bpsim:UniformDistribution max="10.0" min="5.0"/>
+              </bpsim:ProcessingTime>
+            </bpsim:TimeParameters>
+            <bpsim:CostParameters xsi:type="bpsim:CostParameters">
+              <bpsim:UnitCost xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="0.0"/>
+              </bpsim:UnitCost>
+            </bpsim:CostParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_A15F639D-993D-4756-B6AC-4F4463BB3CF8" id="_J4P64A2jEea4BY8hNaex2w">
+            <bpsim:ControlParameters xsi:type="bpsim:ControlParameters">
+              <bpsim:Probability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="100.0"/>
+              </bpsim:Probability>
+            </bpsim:ControlParameters>
+          </bpsim:ElementParameters>
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_D966BC6F-2745-4910-A8EB-421E4C4B1FFF" id="_J4P64Q2jEea4BY8hNaex2w">
+            <bpsim:ControlParameters xsi:type="bpsim:ControlParameters">
+              <bpsim:Probability xsi:type="bpsim:Parameter">
+                <bpsim:FloatingParameter value="100.0"/>
+              </bpsim:Probability>
+            </bpsim:ControlParameters>
+          </bpsim:ElementParameters>
+        </bpsim:Scenario>
+      </bpsim:BPSimData>
+    </bpmn2:extensionElements>
+    <bpmn2:source>_J4P60A2jEea4BY8hNaex2w</bpmn2:source>
+    <bpmn2:target>_J4P60A2jEea4BY8hNaex2w</bpmn2:target>
+  </bpmn2:relationship>
+</bpmn2:definitions>

@@ -3,156 +3,175 @@
 <property name="name" value="PeopleManagerTask-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="0" name="TravelerProfile_surName" type="InputText" id="1439770346">
+<field position="0" name="paymentruleoutput" type="InputText" id="864760882">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Last Namequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Payment Rule Outputquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="true"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="inputBinding" value="tprof15/surName"/>
+<property name="inputBinding" value="payruleout"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="1" name="TravelerProfile_firstName" type="InputText" id="1466410393">
+<field position="1" name="rateruleoutput" type="InputText" id="1494178114">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="true"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;First Namequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Rate Check Rule Outputquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="true"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="inputBinding" value="tprof15/firstName"/>
+<property name="inputBinding" value="rrout"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="2" name="TravelSegment_originationDate" type="InputDate" id="383865216">
+<field position="2" name="webserviceoutput" type="InputText" id="1542286215">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="true"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Date of Travelquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Webservice Outputquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="true"/>
-<property name="inputBinding" value="tseg15/originationDate"/>
-<property name="fieldClass" value="java.util.Date"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="wsout"/>
+<property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="3" name="TravelSegment_pricelimit" type="InputText" id="1851074182">
+<field position="3" name="TravelSegment_airsegment" type="InputText" id="1320718622">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Price Limit Chosenquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;airsegment (TravelSegment)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="true"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="inputBinding" value="tseg15/pricelimit"/>
+<property name="inputBinding" value="tseg15/airsegment"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="4" name="TravelSegment_segmentComment" type="InputText" id="49080622">
+<field position="4" name="TravelSegment_bookingPCC" type="InputText" id="596276945">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="true"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Policy Violations?quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;bookingPCC (TravelSegment)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="true"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="inputBinding" value="tseg15/segmentComment"/>
+<property name="inputBinding" value="tseg15/bookingPCC"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="5" name="TravelSegment_segmentFareClass" type="InputText" id="575263610">
+<field position="5" name="TravelSegment_card" type="InputText" id="440872987">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Class of Servicequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="true"/>
-<property name="isHTML" value="false"/>
-<property name="hideContent" value="false"/>
-<property name="inputBinding" value="tseg15/segmentFareClass"/>
+<property name="label" value="quot;enquot;,quot;card (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="tseg15/card"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="6" name="TravelSegment_segmentPaymentType" type="InputText" id="1326461122">
+<field position="6" name="TravelSegment_carsegment" type="InputText" id="684851355">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="true"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Payment Method quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="true"/>
-<property name="isHTML" value="false"/>
-<property name="hideContent" value="false"/>
-<property name="inputBinding" value="tseg15/segmentPaymentType"/>
+<property name="label" value="quot;enquot;,quot;carsegment (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="tseg15/carsegment"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="7" name="TravelSegment_tripReason" type="InputText" id="732613002">
+<field position="7" name="TravelSegment_channel" type="InputText" id="1160137930">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Trip Reasonquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="true"/>
-<property name="isHTML" value="false"/>
-<property name="hideContent" value="false"/>
-<property name="inputBinding" value="tseg15/tripReason"/>
+<property name="label" value="quot;enquot;,quot;channel (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="tseg15/channel"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="8" name="TravelerProfile_executiveLevel" type="InputText" id="830897271">
+<field position="8" name="TravelSegment_clientGUID" type="InputText" id="1462701919">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="true"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Executive Levelquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="true"/>
-<property name="isHTML" value="false"/>
-<property name="hideContent" value="false"/>
-<property name="inputBinding" value="tprof15/executiveLevel"/>
+<property name="label" value="quot;enquot;,quot;clientGUID (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="tseg15/clientGUID"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="9" name="TravelSegment_bookingDate" type="InputDate" id="439881724">
+<field position="9" name="TravelSegment_clientSubtoIRD" type="InputText" id="1525291195">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Date Bookedquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="true"/>
-<property name="inputBinding" value="tseg15/bookingDate"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="10" name="TravelSegment_originationDestinationCode" type="InputText" id="723385615">
-<property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="true"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;From Airportquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="true"/>
-<property name="isHTML" value="false"/>
-<property name="hideContent" value="false"/>
-<property name="inputBinding" value="tseg15/originationDestinationCode"/>
+<property name="label" value="quot;enquot;,quot;clientSubtoIRD (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="tseg15/clientSubtoIRD"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="11" name="TravelSegment_terminatingDestinationCode" type="InputText" id="943982513">
-<property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;To Airportquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="true"/>
-<property name="isHTML" value="false"/>
-<property name="hideContent" value="false"/>
-<property name="inputBinding" value="tseg15/terminatingDestinationCode"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="12" name="TravelSegment_flgihtID" type="InputText" id="46602031">
+<field position="10" name="TravelSegment_country" type="InputText" id="1300433413">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="true"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Flight Numberquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
-<property name="readonly" value="true"/>
-<property name="isHTML" value="false"/>
-<property name="hideContent" value="false"/>
-<property name="inputBinding" value="tseg15/flgihtID"/>
+<property name="label" value="quot;enquot;,quot;country (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="tseg15/country"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="11" name="TravelSegment_fee" type="InputText" id="1098374726">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;fee (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="tseg15/fee"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="12" name="TravelSegment_feesource" type="InputText" id="357184624">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;feesource (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="tseg15/feesource"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="13" name="TravelSegment_numberofairsegments" type="InputText" id="1385100553">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;numberofairsegments (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="tseg15/numberofairsegments"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="14" name="TravelSegment_preticketingdays" type="InputText" id="819364420">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;preticketingdays (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="tseg15/preticketingdays"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="15" name="TravelSegment_processmaster" type="InputText" id="2100148884">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;processmaster (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="tseg15/processmaster"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="16" name="TravelSegment_undergoneird" type="InputText" id="1660838351">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;undergoneird (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="tseg15/undergoneird"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="17" name="TravelSegment_totalairfare" type="InputText" id="2110713896">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;totalairfare (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="tseg15/totalairfare"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="18" name="TravelSegment_withairsegment" type="InputText" id="1436886837">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;withairsegment (TravelSegment)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="tseg15/withairsegment"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="tseg15" name="#E9E371" type="dataModelerEntry" outId="" value="com.redhat.demos.cwtbookingdemo.TravelSegment" id="TravelSegment"/>
 <dataHolder inputId="tprof15" name="#FF54A7" type="dataModelerEntry" outId="" value="com.redhat.demos.cwtbookingdemo.TravelerProfile" id="TravelerProfile"/>
+<dataHolder inputId="payruleout" name="#BBBBBB" type="basicType" outId="" value="java.lang.String" id="paymentruleoutput"/>
+<dataHolder inputId="rrout" name="#FF54A7" type="basicType" outId="" value="java.lang.String" id="rateruleoutput"/>
+<dataHolder inputId="wsout" name="#9BCAFA" type="basicType" outId="" value="java.lang.String" id="webserviceoutput"/>
 </form>

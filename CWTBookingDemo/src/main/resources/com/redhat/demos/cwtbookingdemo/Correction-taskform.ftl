@@ -48,13 +48,13 @@
 	function taskFormValidator() {
 		var i=0;
 		var myInputs = new Array();
-					myInputs[i] = document.getElementById("tsoutput");
+					myInputs[i] = document.getElementById("newtsegout");
 					i++;
 
 
 		var j=0;
 						if(notEmpty(myInputs[j]) && !isAlphanumeric(myInputs[j])) {
-							alert("Please enter valid tsoutput");
+							alert("Please enter valid newtsegout");
 							myInputs[j].focus();
 							return false;
 						}
@@ -211,7 +211,7 @@
 </style>
 <div id="container">
 	<div id="header">
-		User Task Form: NewCWTDemo.PeopleManagerTask
+		User Task Form: NewCWTDemo.Correction
 	</div>
 	<div id="content">
 	    <input type="hidden" name="taskId" value="${task.id}"/>
@@ -237,21 +237,9 @@
 
 		<fieldset>
             <legend>Task Inputs</legend>
-                            		<label for="name">tsinput1</label>
+                            		<label for="name">newtsegin</label>
                             		<div class="div_checkbox">
-                              		${tsinput1}
-                            		</div>
-                            		<label for="name">wsout</label>
-                            		<div class="div_checkbox">
-                              		${wsout}
-                            		</div>
-                            		<label for="name">rrout</label>
-                            		<div class="div_checkbox">
-                              		${rrout}
-                            		</div>
-                            		<label for="name">payruleout</label>
-                            		<div class="div_checkbox">
-                              		${payruleout}
+                              		${newtsegin}
                             		</div>
 
             <div class="clear"></div>
@@ -259,9 +247,9 @@
 
           <fieldset>
             <legend>Task Outputs</legend>
-                            		<label for="name">tsoutput</label>
+                            		<label for="name">newtsegout</label>
                             		<div class="div_texbox">
-                              		<input name="tsoutput" type="text" class="textbox" id="tsoutput" value="${tsoutput}" />
+                              		<input name="newtsegout" type="text" class="textbox" id="newtsegout" value="${newtsegout}" />
                             		</div>
               	
 

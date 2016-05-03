@@ -48,19 +48,8 @@
 	function taskFormValidator() {
 		var i=0;
 		var myInputs = new Array();
-					myInputs[i] = document.getElementById("tsoutput");
-					i++;
-
 
 		var j=0;
-						if(notEmpty(myInputs[j]) && !isAlphanumeric(myInputs[j])) {
-							alert("Please enter valid tsoutput");
-							myInputs[j].focus();
-							return false;
-						}
-			
-					j++;
-
 		return true;
 	}
 </script>
@@ -211,60 +200,12 @@
 </style>
 <div id="container">
 	<div id="header">
-		User Task Form: NewCWTDemo.PeopleManagerTask
+		New Process Instance: /CWTBookingDemo/src/main/resources/com/redhat/demos/cwtbookingdemo.FormTestProcess
 	</div>
 	<div id="content">
-	    <input type="hidden" name="taskId" value="${task.id}"/>
+	    <input type="hidden" name="processId" value="${process.id}"/>
 		<fieldset>
-            <legend>Task Info</legend>
-            	<label for="name">Owners</label>
-            	<div class="div_checkbox">
-											kavitha
-            	
-            	</div>
-            	<label for="name">Actor ID</label>
-            	<div class="div_checkbox"></div>
-            	<label for="name">Group</label>
-            	<div class="div_checkbox"></div>
-            	<label for="name">Skippable</label>
-            	<div class="div_checkbox">true</div>
-            	<label for="name">Priority</label>
-            	<div class="div_checkbox"></div>
-            	<label for="name">Comment</label>
-            	<div class="div_checkbox"></div>
-            <div class="clear"></div>
-          </fieldset>
-
-		<fieldset>
-            <legend>Task Inputs</legend>
-                            		<label for="name">tsinput1</label>
-                            		<div class="div_checkbox">
-                              		${tsinput1}
-                            		</div>
-                            		<label for="name">wsout</label>
-                            		<div class="div_checkbox">
-                              		${wsout}
-                            		</div>
-                            		<label for="name">rrout</label>
-                            		<div class="div_checkbox">
-                              		${rrout}
-                            		</div>
-                            		<label for="name">payruleout</label>
-                            		<div class="div_checkbox">
-                              		${payruleout}
-                            		</div>
-
-            <div class="clear"></div>
-          </fieldset>
-
-          <fieldset>
-            <legend>Task Outputs</legend>
-                            		<label for="name">tsoutput</label>
-                            		<div class="div_texbox">
-                              		<input name="tsoutput" type="text" class="textbox" id="tsoutput" value="${tsoutput}" />
-                            		</div>
-              	
-
+            <legend>Process inputs</legend>
           </fieldset>
 	</div>
 	<div id="footer">
